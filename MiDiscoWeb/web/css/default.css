@@ -96,6 +96,8 @@ td {
 	font-size: 0.25em;
 }
 
+
+
 #footer {
     color: white;
     background: blue;
@@ -397,6 +399,10 @@ div {
     text-align: center;
     color: #757E82;
     font-size: 0.01;
+}
+	
+td input{
+     width: 15vw;
 }
 
 }
