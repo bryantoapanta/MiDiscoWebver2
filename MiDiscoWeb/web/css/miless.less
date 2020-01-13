@@ -1,13 +1,12 @@
 // Color variables (appears count calculates by raw css)
 @color0: #757e82; // Appears 18 times
-@color1: #ffffff; // Appears 8 times
-@color2: #000000; // Appears 2 times
-@color3: #f84b4b; // Appears 2 times
-@color4: #442299; // Appears 2 times
+@color1: #ffffff; // Appears 6 times
+@color2: #9c9c9c; // Appears 6 times
+@color3: #00ffcc; // Appears 2 times
+@color4: #000000; // Appears 2 times
+@color5: #f84b4b; // Appears 2 times
+@color6: #442299; // Appears 2 times
 
-// Width variables (appears count calculates by raw css)
-@width0: 800px; // Appears 2 times
-@width1: 10vw; // Appears 2 times
 
 // Height variables (appears count calculates by raw css)
 @height0: 1%; // Appears 2 times
@@ -15,18 +14,29 @@
 @font-face {
 	font-family: aero;
 	font-family: ea;
+	font-family: ea;
+	font-family: sanssolid;
 	font-family: sanssolid;
 	src: url(fuentes/Aero.ttf);
 	src: url(fuentes/EA.ttf);
+	src: url(fuentes/EA.ttf);
+	src: url(fuentes/SolidSans.ttf);
 	src: url(fuentes/SolidSans.ttf);
 }
 body {
-	background-color: @color1;
-	background-color: @color1;
+	background-image: cover;
+	background-image: cover;
+	background-image: linear-gradient(@color3, white);
+	background: linear-gradient(@color3, white);
+	background: silver;
 	background: silver;
 	color: @color0;
+	color: @color0;
+	font-family: Tahoma, Geneva, sans-serif;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 14px;
+	font-size: 14px;
+	text-align: justify;
 	text-align: justify;
 }
 #container {
@@ -38,8 +48,8 @@ body {
 	border: solid 1px;
 	margin: 0 auto;
 	margin: 0 auto;
-	width: @width0;
-	width: @width0;
+	width: 80%;
+	width: 90%;
 }
 #header {
 	background-image: linear-gradient(hsl(212, 70%, 50%), white);
@@ -57,6 +67,7 @@ body {
 	text-shadow: black 0.1em 0.1em 0.2em;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	h1 {
+		font-family: "aero", sans-serif;
 		font-family: "aero", sans-serif;
 		font-size: 24px;
 		font-size: 24px;
@@ -81,8 +92,8 @@ body {
 	padding: 20px;
 	padding: 20px;
 	h2 {
-		color: @color2;
-		color: @color2;
+		color: @color4;
+		color: @color4;
 		font-size: 160%;
 		font-size: 160%;
 		margin: 0 0 .5em;
@@ -90,8 +101,8 @@ body {
 	}
 }
 #aviso {
-	background: @color3;
-	background: @color3;
+	background: @color5;
+	background: @color5;
 	background: white;
 	background: white;
 	border-radius: 8px 8px 8px 8px;
@@ -112,8 +123,8 @@ li {
 	padding: 18px;
 }
 a {
-	color: @color4;
-	color: @color4;
+	color: @color6;
+	color: @color6;
 	text-decoration: none;
 	text-decoration: none;
 }
@@ -126,7 +137,10 @@ table {
 	border-collapse: collapse;
 	border: 22px solid @color0;
 	border: 22px solid @color0;
-	font-family: 'ea', sans-serif;
+	color: @color2;
+	color: @color2;
+	font-family: 'sanssolid', sans-serif;
+	font-family: 'sanssolid', sans-serif;
 	font-size: 1.2em;
 	padding: 10px;
 	padding: 10px;
@@ -136,7 +150,10 @@ th {
 	border-collapse: collapse;
 	border: 22px solid @color0;
 	border: 22px solid @color0;
-	font-family: 'ea', sans-serif;
+	color: @color2;
+	color: @color2;
+	font-family: 'sanssolid', sans-serif;
+	font-family: 'sanssolid', sans-serif;
 	font-size: 1.2em;
 	padding: 10px;
 	padding: 10px;
@@ -146,10 +163,31 @@ td {
 	border-collapse: collapse;
 	border: 22px solid @color0;
 	border: 22px solid @color0;
-	font-family: 'ea', sans-serif;
+	color: @color2;
+	color: @color2;
+	font-family: 'sanssolid', sans-serif;
+	font-family: 'sanssolid', sans-serif;
+	font-size: 0.5em;
 	font-size: 1.2em;
 	padding: 10px;
 	padding: 10px;
+	input {
+		width: 120%;
+	}
+}
+#verusuarios {
+	border: 1px solid @color0;
+	border: 1px solid @color0;
+	td {
+		border: 1px solid @color0;
+		border: 1px solid @color0;
+		font-size: 0.25em;
+		font-size: 1.2em;
+	}
+	tr {
+		border: 1px solid @color0;
+		border: 1px solid @color0;
+	}
 }
 #footer {
 	background: blue;
@@ -176,14 +214,17 @@ td {
 		border: none;
 		border: none;
 	}
+	td>input {
+		width: 100%;
+	}
 }
 input {
 	border-radius: 3px;
 	border-radius: 3px;
 	border: 1px solid black;
 	border: 1px solid black;
-	width: @width1;
-	width: @width1;
+	width: 10vw;
+	width: 30%;
 }
 #facceso {
 	border: none;
@@ -221,18 +262,6 @@ input {
 		border: none;
 	}
 }
-#verusuarios {
-	border: 1px solid @color0;
-	border: 1px solid @color0;
-	td {
-		border: 1px solid @color0;
-		border: 1px solid @color0;
-	}
-	tr {
-		border: 1px solid @color0;
-		border: 1px solid @color0;
-	}
-}
 h1 {
 	color: @color1;
 	color: @color1;
@@ -240,7 +269,7 @@ h1 {
 .paginas {
 	color: @color0;
 	color: @color0;
-	font-family: "ea", sans-serif;
+	font-family: "sanssolid", sans-serif;
 	font-family: "sanssolid", sans-serif;
 }
 div {
@@ -257,12 +286,9 @@ div {
 }
 @media {
 	(min-width {
-		&:900px) {
-			body { background: silver;
-			color: @color0;
-			font-family: Tahoma, Geneva, sans-serif;
-			font-size: 14px;
-			text-align: justify;
+		&:760px) {
+			@font-face { font-family: aero;
+			src: url(fuentes/Aero.ttf);
 		}
 	}
-}
+    }}
