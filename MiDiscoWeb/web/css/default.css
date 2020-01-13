@@ -162,7 +162,7 @@ h1 {
 }
 
 #content {
-    background: ;
+    
 
     border-radius: 8px 8px 0px 0px;
 }
@@ -350,6 +350,7 @@ input {
 body {
     background: linear-gradient(#00FFCC, white);
     background-image: cover;
+    height: 100vh;
 }
 
 h1 {
@@ -389,6 +390,7 @@ div {
 
 #container {
     border: none;
+    height: 70vh;
 }
 
 #autores {
