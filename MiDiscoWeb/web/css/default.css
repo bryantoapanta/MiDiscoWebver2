@@ -24,9 +24,10 @@ body {
 
 #container {
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     background: #fff;
     border: solid 1px;
+    border-radius: 7px;
 }
 
 #header {
@@ -49,11 +50,9 @@ body {
 }
 
 #content {
-
     background: white;
     clear: left;
     padding: 20px;
-
 }
 
 #content h2 {
@@ -93,9 +92,12 @@ td {
 }
 
 #verusuarios td{
-	font-size: 0.25em;
+	font-size: 0.73em;
 }
 
+#verusuarios .ocultos{
+	display: none;
+}
 
 
 #footer {
@@ -205,6 +207,11 @@ td{
    font-size: 0.5em;
 }
 
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/******************************************R-U-P-T-U-R-A******************************************************************/
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
 
 @media (min-width: 760px) {
 
@@ -234,9 +241,10 @@ body {
 
 #container {
     margin: 0 auto;
-    width: 80%;
+    width: 87%;
     background: #fff;
     border: solid 1px;
+    border-radius: 9px;
 }
 
 #header {
@@ -346,6 +354,10 @@ input {
 
 #verusuarios td{
 	font-size: 1.2em;
+}
+
+#verusuarios .ocultos{
+	display: table-cell;
 }
 
 
